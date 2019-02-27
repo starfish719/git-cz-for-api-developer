@@ -1,7 +1,7 @@
 {
-  "name": "git-cz",
+  "name": "git-cz-for-api-developer",
   "version": "0.1.1",
-  "description": "Semantic emojified git commit, git-cz",
+  "description": "Semantic emojified git commit for api developer, git-cz-for-api-developer",
   "main": "dist/cz.js",
   "bin": {
     "git-cz": "./bin/git-cz.js",
@@ -9,9 +9,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/streamich/git-cz.git"
+    "url": "git+ssh://git@github.com/starfish719/git-cz-for-api-developer"
   },
-  "homepage": "https://github.com/streamich/git-cz",
+  "homepage": "https://github.com/starfish719/git-cz-for-api-developer",
   "license": "Unlicense",
   "scripts": {
     "lint": "yarn eslint",
@@ -26,21 +26,21 @@
     "eslint": "eslint lib/*.js"
   },
   "devDependencies": {
-    "mmarkdown": "^1.0.0",
     "browserify": "^16.2.2",
-    "mocha": "^5.2.0",
-    "inquirer": "^6.0.0",
-    "word-wrap": "^1.2.3",
-    "pad-right": "^0.2.2",
-    "signale": "^1.1.0",
     "chalk": "^2.4.1",
-    "commitizen": "^2.9.6",
+    "commitizen": "^3.0.7",
     "eslint": "^4.19.1",
     "eslint-config-mailonline": "^9.0.0",
     "husky": "^0.14.3",
+    "inquirer": "^6.0.0",
+    "minimist": "^1.2.0",
+    "mmarkdown": "^1.0.0",
+    "mocha": "^5.2.0",
+    "pad-right": "^0.2.2",
     "rimraf": "^2.6.2",
     "shell-escape": "^0.2.0",
-    "minimist": "^1.2.0"
+    "signale": "^1.1.0",
+    "word-wrap": "^1.2.3"
   },
   "config": {
     "commitizen": {
@@ -52,5 +52,12 @@
     "out": "./README.md",
     "scripts": "./build/readme.js",
     "backup": false
-  }
+  },
+  "directories": {
+    "doc": "docs",
+    "lib": "lib",
+    "test": "test"
+  },
+  "dependencies": {},
+  "author": "starfish719 (https://github.com/starfish719)"
 }
