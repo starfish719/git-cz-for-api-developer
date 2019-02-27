@@ -1,9 +1,8 @@
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+# git-cz-for-api-developer
 
+> A fork of [`git-cz`](https://github.com/streamich/git-cz). 
 
-# git-cz
-
-![image](https://user-images.githubusercontent.com/9773803/49760520-fa6c6f00-fcc4-11e8-84c4-80727f071487.png)
+1) Adds relese types (major, minor, patch and etc)
 
 
 ### Without installation
@@ -57,99 +56,13 @@ run:
 git cz
 ```
 
-
-## Custom config
-
-You can provide custom configuration in `changelog.config.js` file
-in your repo. Below is default config:
-
-```js
-module.exports = {
-  "list": [
-    "test",
-    "feat",
-    "fix",
-    "chore",
-    "docs",
-    "refactor",
-    "style",
-    "ci",
-    "perf"
-  ],
-  "maxMessageLength": 64,
-  "minMessageLength": 3,
-  "questions": [
-    "type",
-    "scope",
-    "subject",
-    "body",
-    "breaking",
-    "issues",
-    "lerna"
-  ],
-  "scopes": [],
-  "types": {
-    "chore": {
-      "description": "Build process or auxiliary tool changes",
-      "emoji": "🤖",
-      "value": "chore"
-    },
-    "ci": {
-      "description": "CI related changes",
-      "emoji": "🎡",
-      "value": "ci"
-    },
-    "docs": {
-      "description": "Documentation only changes",
-      "emoji": "✏️",
-      "value": "docs"
-    },
-    "feat": {
-      "description": "A new feature",
-      "emoji": "🎸",
-      "value": "feat"
-    },
-    "fix": {
-      "description": "A bug fix",
-      "emoji": "🐛",
-      "value": "fix"
-    },
-    "perf": {
-      "description": "A code change that improves performance",
-      "emoji": "⚡️",
-      "value": "perf"
-    },
-    "refactor": {
-      "description": "A code change that neither fixes a bug or adds a feature",
-      "emoji": "💡",
-      "value": "refactor"
-    },
-    "release": {
-      "description": "Create a release commit",
-      "emoji": "🏹",
-      "value": "release"
-    },
-    "style": {
-      "description": "Markup, white-space, formatting, missing semi-colons...",
-      "emoji": "💄",
-      "value": "style"
-    },
-    "test": {
-      "description": "Adding missing tests",
-      "emoji": "💍",
-      "value": "test"
-    }
-  }
-};
-```
-
 ## Commit Message Format
 
 * A commit message consists of a **header**, **body** and **footer**.
-* The header has a **type** and a **subject**:
+* The header has a **releaseType** and **type** and a **subject**:
 
 ```
-<type>[(<scope>)]: <emoji> <subject>
+<releaseType>-<type>[(<scope>)]: <emoji> <subject>
 [BLANK LINE]
 [body]
 [BLANK LINE]
@@ -165,6 +78,14 @@ The first line (type + subject) is limited to 50 characters **[enforced]**
 Any other line should be limited to 72 character **[automatic wrapping]**
 
 This allows the message to be easier to read on GitHub as well as in various git tools.
+
+### Release Type
+
+Must be one of the following:
+
+- `major` &mdash; major update
+- `minor` &mdash; minor update
+- `patch` &mdash; patch update
 
 ### Type
 
