@@ -4,8 +4,8 @@
   "description": "Semantic emojified git commit for api developer, git-cz-for-api-developer",
   "main": "dist/cz.js",
   "bin": {
-    "git-cz": "./bin/git-cz.js",
-    "gitcz": "./bin/git-cz.js"
+    "git-cz-api": "./bin/git-cz-api.js",
+    "gitczapi": "./bin/git-cz-api.js"
   },
   "repository": {
     "type": "git",
