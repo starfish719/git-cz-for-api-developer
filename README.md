@@ -8,21 +8,21 @@
 ### Without installation
 
 ```shell
-npx git-cz
+npx git-cz-api
 ```
 
 ### Install globally standalone
 
 ```shell
-npm install -g git-cz
-git-cz
+npm install -g git-cz-for-api-developer
+git-cz-api
 ```
 
 ### Install locally with Commitizen
 
 ```shell
 npm install -g commitizen
-npm install --save-dev git-cz
+npm install --save-dev git-cz-for-api-developer
 ```
 
 `package.json`:
@@ -31,7 +31,7 @@ npm install --save-dev git-cz
 {
   "config": {
     "commitizen": {
-      "path": "git-cz"
+      "path": "git-cz-for-api-developer"
     }
   },
 }
@@ -46,8 +46,8 @@ git cz
 ### Install globally with Commitizen
 
 ```shell
-npm install -g commitizen git-cz
-commitizen init git-cz --save-dev --save-exact
+npm install -g commitizen git-cz-for-api-developer
+commitizen init git-cz-for-api-developer --save-dev --save-exact
 ```
 
 run:
@@ -131,7 +131,7 @@ The footer is the place to reference any tasks related to this commit.
 ## Why this Fork?
 
 ```
-npm i -g git-cz
+npm i -g git-cz-for-api-developer
 added 1 package in 0.612s
 ```
 

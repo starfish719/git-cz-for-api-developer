@@ -1,6 +1,6 @@
 {
   "name": "git-cz-for-api-developer",
-  "version": "v1.0.3",
+  "version": "v1.0.4",
   "description": "Semantic emojified git commit for api developer, git-cz-for-api-developer",
   "main": "dist/cz.js",
   "bin": {
